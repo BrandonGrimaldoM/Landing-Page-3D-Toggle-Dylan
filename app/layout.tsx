@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Bebas_Neue } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const bebas_Neue = Bebas_Neue({ subsets: ['latin-ext'] ,weight: '400'})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={bebas_Neue.className + " bg-[url('/images/background.jpg')] bg-no-repeat bg-cover w-full max-lg:bg-none"}>{children}</body>
     </html>
   )
 }
